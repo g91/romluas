@@ -1,0 +1,40 @@
+function LuaFunc_InitZone_4( RoomID )
+
+	--Z4Äq3ºX¼Ð½s¸¹780132 X31
+	--Z4¤ì3ºX¼Ð½s¸¹780133 X31
+	--Z4¯ó3ºX¼Ð½s¸¹780134 X31
+
+	--Z4Äq4ºX¼Ð½s¸¹780135 X101
+	--Z4¤ì4ºX¼Ð½s¸¹780136 X101
+	--Z4¯ó4ºX¼Ð½s¸¹780137 X101
+
+	--Z4Äq5ºX¼Ð½s¸¹780138 X51
+	--Z4¤ì5ºX¼Ð½s¸¹780139 X51
+	--Z4¯ó5ºX¼Ð½s¸¹780140 X51
+
+	-- GenerateMine( RoomID, FlagID, MineID, Count );
+
+	GenerateMine( RoomID, 780132, 560003, 16 );	-- ¨ªÅKÄq
+	GenerateMine( RoomID, 780135, 560004, 51 );	-- µµ»ÉÄq
+	GenerateMine( RoomID, 780138, 560005, 26 );	-- îî´¹Äq
+	GenerateMine( RoomID, 780132, 560056, 2 );	-- ÂÅ¦B¥Û
+	GenerateMine( RoomID, 780135, 560057, 5 );	-- ¤j¤ô´¹
+	GenerateMine( RoomID, 780138, 560057, 2 );	-- ¤j¤ô´¹
+	GenerateMine( RoomID, 780138, 560058, 1 );	-- ¶ø§Q«¢º¸
+
+	GenerateMine( RoomID, 780133, 560020, 16 );
+	GenerateMine( RoomID, 780136, 560021, 51 );
+	GenerateMine( RoomID, 780139, 560022, 26 );
+	GenerateMine( RoomID, 780133, 560063, 2 );
+	GenerateMine( RoomID, 780136, 560064, 5 );
+	GenerateMine( RoomID, 780139, 560064, 2 );
+	GenerateMine( RoomID, 780139, 560065, 1 );
+
+	GenerateMine( RoomID, 780134, 560037, 16 );
+	GenerateMine( RoomID, 780137, 560038, 51 );
+	GenerateMine( RoomID, 780140, 560039, 26 );
+	GenerateMine( RoomID, 780134, 560070, 2 );
+	GenerateMine( RoomID, 780137, 560071, 5 );
+	GenerateMine( RoomID, 780140, 560071, 2 );
+	GenerateMine( RoomID, 780140, 560072, 1 );
+end

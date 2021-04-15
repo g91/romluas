@@ -1,0 +1,124 @@
+----K.J. Aris
+----13.07.10.10.28
+----28 BOSS-3-亡魂撫慰之冥管-雪斯敦
+--
+--_28BOSS3_7sec_Cycle_Action = false;
+--_28BOSS3_11sec_Cycle_Action = false;
+--_28BOSS3_17sec_Cycle_Action = false;
+---------------------------Switch----------------------
+--function KJ_28BOSS3_ACTION()--開始動作
+--	--settings
+--	local _bossID = OwnerID();
+--
+--	--7sec_Cycle skill
+--	local _singleTapSkillID = 851144;
+--	local _tripleTapSkillID = 851117;
+--	
+--	--11sec_Cycle
+--	local _AeDotSkillID = 851140;
+--
+--	
+--	--settings
+--	CallPlot( _bossID , "KJ_28BOSS_7sec_Cycle" , _singleTapSkillID , _tripleTapSkillID );--每7秒RAND 2招
+--	CallPlot( _bossID , "KJ_28BOSS_11sec_Cycle" , _AeDotSkillID );--每11秒，施放一個AE+DOT
+--	CallPlot( _bossID , "KJ_28BOSS_17sec_Cycle" );--每17秒，吸收一次靈魂碎片到靈魂容器內
+--end
+--
+--
+--function KJ_28BOSS3_CUT()--停止動作
+--	_28BOSS3_7sec_Cycle_Action = false;--中斷7秒循環
+--	_28BOSS3_11sec_Cycle_Action = false;--中斷11秒循環
+--	_28BOSS3_17sec_Cycle_Action = false;--中斷17秒循環
+--
+--	DebugMsg( 0 , 0 , "  KJ_28BOSS3_CUT " );
+--end
+--
+---------------------------Switch-----------------------end
+--
+--
+-------------------28BOSS_7sec_Cycle----------------
+--function KJ_28BOSS_7sec_Cycle( _InputSingleTapSkillID , _InputTripleTapSkillID )
+----	每7秒RAND 2招。
+----	→ 單體攻擊（75碼），附帶降治療30%，負面可解，永久。
+----	→ 隨機打3人（1000碼）。
+--
+--	_28BOSS3_7sec_Cycle_Action = true;--為了可以中斷動作
+--
+--	local _bossID = OwnerID();
+--	local _delayer = 70;--每7秒施放
+--	local _bossHP = ReadRoleValue(  _bossID , EM_RoleValue_HP );
+--
+--	while ( _bossHP > 0 ) AND _28BOSS3_7sec_Cycle_Action == true do--當BOSS還活著時才執行
+--		Sleep( _delayer );
+--		--Say( _bossID , "我是7秒一次俠，隨便打兩招" );
+--		DebugMsg( 0 , 0 , "  我是7秒一次俠，隨便打兩招 " );
+--		if RandRange( 1 , 2 ) == 1 then --random 兩招
+--			CallPlot( _bossID , "KJ_28BOSS3_SingleTap" , _InputSingleTapSkillID );
+--		else
+--			CallPlot( _bossID , "KJ_28BOSS3_TripleTap" , _InputTripleTapSkillID );
+--		end
+--		
+--		
+--	end
+--end--function KJ_28BOSS_7sec_Cycle
+--
+--
+-------------------28BOSS_7sec_Cycle----------------end
+--
+--
+--
+--
+--
+--
+--
+--
+--
+-------------------28BOSS_11sec_Cycle----------------
+--function KJ_28BOSS_11sec_Cycle( _InputAeDotSkillID )
+----	2. 每11秒，BOSS會施放一個AE+DOT，詛咒，持續時間8秒。
+--	_28BOSS3_11sec_Cycle_Action = true;--為了可以中斷動作
+--
+--	local _bossID = OwnerID();
+--	local _delayer = 110;--每11秒施放
+--	local _bossHP = ReadRoleValue(  _bossID , EM_RoleValue_HP );
+--	
+--	--local _effectRange = 1000; --搜尋範圍 & 攻擊距離
+--	local _skillID = _InputAeDotSkillID;--493631;--for temporary
+--	
+--
+--	while ( _bossHP > 0 ) AND _28BOSS3_11sec_Cycle_Action == true do--當BOSS還活著時才執行
+--		Sleep( _delayer );
+--		CastSpell(  _bossID , _bossID , _SkillID ) ;--AE+DOT，詛咒，持續時間8秒
+--		--Say( _bossID , "AE+DOT，詛咒，持續時間8秒" );
+--		DebugMsg( 0 , 0 , _bossID.."  AE+DOT，詛咒，持續時間8秒 " );
+--	end
+--end--function KJ_28BOSS_11sec_Cycle
+-------------------28BOSS_11sec_Cycle----------------END
+--
+--
+--
+--
+--
+-------------------28BOSS_17sec_Cycle----------------
+--function KJ_28BOSS_17sec_Cycle()
+--
+----	3. 每17秒，BOSS會吸收一次靈魂碎片到靈魂容器內，並且同時增強自身的力量。
+----	→ 靈魂容器內的靈魂狀態只要BUFF疊1層，則BOSS威力+1%。
+--
+--	_28BOSS3_17sec_Cycle_Action = true;--為了可以中斷動作
+--
+--	local _bossID = OwnerID();
+--	local _delayer = 170;--每17秒施放
+--	local _bossHP = ReadRoleValue(  _bossID , EM_RoleValue_HP );
+--	
+--	local _skillID = 851117;--for temporary
+--
+--	
+--	while ( _bossHP > 0 ) AND _28BOSS3_17sec_Cycle_Action == true do--當BOSS還活著時才執行
+--		Sleep( _delayer );
+--		--CastSpell(  _bossID , _bossID , _SkillID ) ;--AE+DOT，詛咒，持續時間8秒
+--		--Say( _bossID , "吸收靈魂碎片到靈魂容器內" );
+--		DebugMsg( 0 , 0 , _bossID.."  吸收靈魂碎片到靈魂容器內 " );
+--	end
+--end--function KJ_28BOSS_17sec_Cycle
+-------------------28BOSS_17sec_Cycle----------------END

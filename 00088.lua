@@ -1,0 +1,3 @@
+function MyOpenMail()
+OpenMail()
+end

@@ -1,0 +1,39 @@
+function Init_MinimapIcon_ENUM()
+	EM_MapIconType_Unknow        = 0 ;
+	EM_MapIconType_NewQuest      = 1 ;   --	新任務
+	EM_MapIconType_UnfinishQuest = 2 ;   --	未完成任務
+	EM_MapIconType_FinishedQuest = 3 ;   --	完成任務
+	EM_MapIconType_TrustQuest    = 4 ;   -- 委託任務
+	EM_MapIconType_Bank          = 5 ;   -- 銀行
+	EM_MapIconType_MailBox       = 6 ;   -- 郵筒
+	EM_MapIconType_FlightPoint   = 7 ;   -- 飛行點
+	EM_MapIconType_AuctionHouse  = 8 ;   -- 拍賣所
+ 	EM_MapIconType_Mine          = 9 ;   -- 採集點-礦
+	EM_MapIconType_Wood          = 10;   -- 採集點-木
+	EM_MapIconType_Herb          = 11;   -- 採集點-藥草
+  	EM_MapIconType_Inn           = 12;   -- 旅店
+	EM_MapIconType_GuildMan      = 13;   -- 公會建立者
+	EM_MapIconType_HouseMan      = 14;   -- 房屋管理者
+	EM_MapIconType_Weapon        = 15;   -- 武器屋
+	EM_MapIconType_Armor         = 16;   -- 防具屋
+	EM_MapIconType_Potion        = 17;   -- 藥水店
+	EM_MapIconType_Food          = 18;   -- 飲食店
+	EM_MapIconType_Magic         = 19;   -- 魔法商店
+	EM_MapIconType_Mat           = 20;   -- 材料行
+	EM_MapIconType_Shop          = 21;   -- 雜貨店
+	EM_MapIconType_Fish          = 22;   -- 漁具店
+	EM_MapIconType_Recipe        = 23;   -- 配方
+  	EM_MapIconType_Warrior       = 24;
+	EM_MapIconType_Ranger        = 25;
+	EM_MapIconType_Rogue         = 26;
+	EM_MapIconType_Wizard        = 27;
+	EM_MapIconType_Priest        = 28;
+	EM_MapIconType_Knight        = 29;
+  	EM_MapIconType_Flag          = 30;   
+	EM_MapIconType_NPC           = 31;
+	EM_MapIconType_Player        = 32; 
+	EM_MapIconType_TrackArrow    = 33;
+ 	EM_MapIconType_LotteryMan    = 34;  --彩券
+	EM_MapIconType_VocationMan   = 35;  --職業管理員
+
+end

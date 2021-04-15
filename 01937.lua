@@ -1,0 +1,59 @@
+function Lua_115956_RecipeList_Init()	
+	AddRecipe( OwnerID(), 551365 ); --森林騎士頭盔
+	AddRecipe( OwnerID(), 551366 ); --森林騎士鎧甲
+	AddRecipe( OwnerID(), 551367 ); --森林騎士護腿
+	AddRecipe( OwnerID(), 551368 ); --森林戰士頭盔
+	AddRecipe( OwnerID(), 551369 ); --森林戰士鎖甲
+	AddRecipe( OwnerID(), 551370 ); --森林戰士護腿
+	AddRecipe( OwnerID(), 551371 ); --森林敏捷頭盔
+	AddRecipe( OwnerID(), 551372 ); --森林敏捷鎧甲
+	AddRecipe( OwnerID(), 551373 ); --森林敏捷護腿
+	AddRecipe( OwnerID(), 551470 ); --古堡頭盔
+	AddRecipe( OwnerID(), 551471 ); --古堡鎧甲
+	AddRecipe( OwnerID(), 551472 ); --古堡褲子
+	AddRecipe( OwnerID(), 551473 ); --瘟疫輕盔
+	AddRecipe( OwnerID(), 551474 ); --瘟疫輕甲
+	AddRecipe( OwnerID(), 551475 ); --瘟疫輕褲子
+	AddRecipe( OwnerID(), 551476 ); --墓碑皮帽
+	AddRecipe( OwnerID(), 551477 ); --墓碑皮衣
+	AddRecipe( OwnerID(), 551478 ); --墓碑皮褲
+
+
+	AddRecipe( OwnerID(), 551391 ); --強化森林騎士頭盔
+	AddRecipe( OwnerID(), 551392 ); --強化森林騎士鎧甲
+	AddRecipe( OwnerID(), 551393 ); --強化森林騎士護腿
+	AddRecipe( OwnerID(), 551394 ); --強化森林戰士頭盔
+	AddRecipe( OwnerID(), 551395 ); --強化森林戰士鎖甲
+	AddRecipe( OwnerID(), 551396 ); --強化森林戰士護腿
+	AddRecipe( OwnerID(), 551397 ); --強化森林敏捷頭盔
+	AddRecipe( OwnerID(), 551398 ); --強化森林敏捷鎧甲
+	AddRecipe( OwnerID(), 551399 ); --強化森林敏捷護腿
+	AddRecipe( OwnerID(), 551496 ); --強化古堡頭盔
+	AddRecipe( OwnerID(), 551497 ); --強化古堡鎧甲
+	AddRecipe( OwnerID(), 551498 ); --強化古堡褲子
+	AddRecipe( OwnerID(), 551499 ); --強化瘟疫輕盔
+	AddRecipe( OwnerID(), 551500 ); --強化瘟疫輕甲
+	AddRecipe( OwnerID(), 551501 ); --強化瘟疫輕褲子
+	AddRecipe( OwnerID(), 551502 ); --強化墓碑皮帽
+	AddRecipe( OwnerID(), 551503 ); --強化墓碑皮衣
+	AddRecipe( OwnerID(), 551504 ); --強化墓碑皮褲
+
+	AddRecipe( OwnerID(), 551417 ); --稀有森林騎士頭盔
+	AddRecipe( OwnerID(), 551418 ); --稀有森林騎士鎧甲
+	AddRecipe( OwnerID(), 551419 ); --稀有森林騎士護腿
+	AddRecipe( OwnerID(), 551420 ); --稀有森林戰士頭盔
+	AddRecipe( OwnerID(), 551421 ); --稀有森林戰士鎖甲
+	AddRecipe( OwnerID(), 551422 ); --稀有森林戰士護腿
+	AddRecipe( OwnerID(), 551423 ); --稀有森林敏捷頭盔
+	AddRecipe( OwnerID(), 551424 ); --稀有森林敏捷鎧甲
+	AddRecipe( OwnerID(), 551425 ); --稀有森林敏捷護腿
+	AddRecipe( OwnerID(), 551522 ); --稀有古堡頭盔
+	AddRecipe( OwnerID(), 551523 ); --稀有古堡鎧甲
+	AddRecipe( OwnerID(), 551524 ); --稀有古堡褲子
+	AddRecipe( OwnerID(), 551525 ); --稀有瘟疫輕盔
+	AddRecipe( OwnerID(), 551526 ); --稀有瘟疫輕甲
+	AddRecipe( OwnerID(), 551527 ); --稀有瘟疫輕褲子
+	AddRecipe( OwnerID(), 551528 ); --稀有墓碑皮帽
+	AddRecipe( OwnerID(), 551529 ); --稀有墓碑皮衣
+	AddRecipe( OwnerID(), 551530 ); --稀有墓碑皮褲
+end

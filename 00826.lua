@@ -1,0 +1,31 @@
+--©g¥i-Ã¹®æÂí¤ì¤u¾É®v
+function Lua_110598_RecipeList_Init()
+
+--	SetPlot( OwnerID() , "Touch" , "Lua_110598_RecipeList_Touch" , 60 );
+	
+AddRecipe( OwnerID(), 550271 ); --²Ó¤ì¤}
+AddRecipe( OwnerID(), 550290 ); --Ãè²ïªá
+AddRecipe( OwnerID(), 550302 ); --ªø§ú
+AddRecipe( OwnerID(), 550327 ); --¤ì»sµu§ú
+AddRecipe( OwnerID(), 550257 ); --Â²©ö©¸
+AddRecipe( OwnerID(), 550271 ); --°í¤ì¤}
+AddRecipe( OwnerID(), 550304 ); --¨£²ßªk§ú
+AddRecipe( OwnerID(), 550329 ); --Å]¤Oµu§ú
+AddRecipe( OwnerID(), 550258 ); --¥Û©¸
+AddRecipe( OwnerID(), 550291 ); --§Å»î¹ÏÄË
+AddRecipe( OwnerID(), 550275 ); --µwµu¤}
+AddRecipe( OwnerID(), 550305 ); --¤ë¤§§ú
+AddRecipe( OwnerID(), 550782 ); --Å]¬h¿ü§ú
+AddRecipe( OwnerID(), 550261 ); --³s©¸
+AddRecipe( OwnerID(), 550308 ); --²ï­}´µ
+AddRecipe( OwnerID(), 550761 ); --§ÅÂåµ§°O
+
+	
+end
+
+function Lua_110598_RecipeList_Touch()
+	closeSpeak( OwnerID() )
+	GetRecipeList( OwnerID(), TargetID() );	 -- GetRecipeList( Player, NPC );
+	
+
+end

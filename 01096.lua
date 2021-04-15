@@ -1,0 +1,130 @@
+--function LuaN_Xmas_SnowMan()
+--	SetPlot( OwnerID() , "dead" , "LuaN_Xmas_SnowManDeadScritp" , 0 )
+--end
+--function LuaN_Xmas_SnowManDeadScritp()
+--	local Obj = Role:new(OwnerID())
+--	local BaseX = Obj :X()
+--	local BaseY = Obj :Y()
+--	local BaseZ = Obj :Z()
+--	local BaseDir = Obj:Dir()
+--	local MonsterGroup = {}
+--	MonsterGroup[1] = CreateObj( 112035, BaseX-rand(50), BaseY, BaseZ, BaseDir, 1 )
+--	MonsterGroup[2] = CreateObj( 112035, BaseX+rand(50), BaseY, BaseZ, BaseDir, 1 )
+--	MonsterGroup[3] = CreateObj( 112035, BaseX, BaseY, BaseZ-rand(50), BaseDir, 1 )
+--	MonsterGroup[4] = CreateObj( 112035, BaseX, BaseY, BaseZ+rand(50), BaseDir, 1 )
+--	AddToPartition(MonsterGroup[1],0)
+--	AddToPartition(MonsterGroup[2],0)
+--	AddToPartition(MonsterGroup[3],0)
+--	AddToPartition(MonsterGroup[4],0)
+--	ScriptMessage(OwnerID() , 0 , 1 , "[SC_SNOWMANDEAD]" , C_SYSTEM )
+--	return true
+--end
+--
+--function LuaN_Xmas_SnowManBoss()
+--	Discowood_OnlyOne_Check()
+--	SetPlot( OwnerID() , "dead" , "LuaN_Xmas_SnowManBossDeadScritp" , 0 )
+--end
+--
+--function LuaN_Xmas_SnowManBossDeadScritp()
+--	local Obj = Role:new(OwnerID())
+--	local BaseX = Obj :X()
+--	local BaseY = Obj :Y()
+--	local BaseZ = Obj :Z()
+--	local BaseDir = Obj:Dir()
+--	local MonsterGroup = {}
+--	MonsterGroup[0] = CreateObj( 112038, BaseX, BaseY, BaseZ, BaseDir, 1 )
+--	MonsterGroup[1] = CreateObj( 112035, BaseX-rand(50), BaseY, BaseZ, BaseDir, 1 )
+--	MonsterGroup[2] = CreateObj( 112035, BaseX+rand(50), BaseY, BaseZ, BaseDir, 1 )
+--	MonsterGroup[3] = CreateObj( 112035, BaseX, BaseY, BaseZ-rand(50), BaseDir, 1 )
+--	MonsterGroup[4] = CreateObj( 112035, BaseX, BaseY, BaseZ+rand(50), BaseDir, 1 )
+--	AddToPartition(MonsterGroup[0],0)
+--	AddToPartition(MonsterGroup[1],0)
+--	AddToPartition(MonsterGroup[2],0)
+--	AddToPartition(MonsterGroup[3],0)
+--	AddToPartition(MonsterGroup[4],0)
+--	ScriptMessage(OwnerID() , 0 , 1 , "[SC_SNOWMANBOSSDEAD]" , C_SYSTEM )
+--	
+--	return true
+--end
+--
+----布袋的初始劇情
+--function LuaS_XmasBag()
+--	SetPlot(OwnerID() , "touch" , "LuaS_TouchXmasBag" , 40 )
+--	Sleep(600)
+--	SetPlot(OwnerID() , "touch" , "" , 0 )
+--	Delobj(OwnerID())
+--end
+--
+----布袋的觸碰劇情
+--function LuaS_TouchXmasBag()
+--	if ReadRoleValue( TargetID() , EM_RoleValue_PID) == 1 then
+--		ScriptMessage( OwnerID(),OwnerID(),1,"[SYS_AUCTION_WAIT_NEXT]",0)	--忙碌中，請稍候再試。
+--		return
+--	end
+--	WriteRoleValue( TargetID() , EM_RoleValue_PID, 1 )
+--	if BeginCastBar( OwnerID(), "[SC_XMAS_OPENBAG]" , 20 , ruFUSION_ACTORSTATE_CRAFTING_BEGIN , ruFUSION_ACTORSTATE_CRAFTING_END , 0 ) == 1 then	-- 拾取布袋
+--		while 1 do
+--			sleep( 2 );
+--			local CastBarStatus = CheckCastBar( OwnerID() );
+--			if ( CastBarStatus ~= 0 ) then 
+--				if ( CastBarStatus > 0) then -- 成功
+--					result = "OKOK"
+--					EndCastBar( OwnerID() , CastBarStatus )
+--					break
+--				elseif ( CastBarStatus < 0 ) then -- 失敗
+--					result = "DAME"
+--					EndCastBar( OwnerID() , CastBarStatus )
+--					break
+--				end
+--			end
+--		end
+--		if ( result == "OKOK" ) then
+--			GiveBodyItem ( OwnerID() , 203536 , 1 )
+--			SetPlot(TargetID() , "touch" , "" , 0 )
+--			DelObj(TargetID())
+--		elseif ( result == "DAME" ) then
+--			WriteRoleValue( TargetID() , EM_RoleValue_PID, 0 )
+--		end
+--	end
+--end
+--
+----雪球的初始劇情
+--function LuaS_XmasSnowBall()
+--	SetPlot(OwnerID() , "touch" , "LuaS_TouchXmasSnowBall" , 20 )
+--	Sleep(600)
+--	SetPlot(OwnerID() , "touch" , "" , 0 )
+--	Delobj(OwnerID())
+--end
+--
+----雪球的觸碰劇情
+--function LuaS_TouchXmasSnowBall()
+--	if ReadRoleValue( TargetID() , EM_RoleValue_PID) == 1 then
+--		ScriptMessage( OwnerID(),OwnerID(),1,"[SYS_AUCTION_WAIT_NEXT]",0)	--忙碌中，請稍候再試。
+--		return
+--	end
+--	WriteRoleValue( TargetID() , EM_RoleValue_PID, 1 )
+--	if BeginCastBar( OwnerID(), "[SC_XMAS_OPENSNOWBALL]" , 20 , ruFUSION_ACTORSTATE_CRAFTING_BEGIN , ruFUSION_ACTORSTATE_CRAFTING_END , 0 ) == 1 then	-- 拾取雪球
+--		while 1 do
+--			sleep( 2 );
+--			local CastBarStatus = CheckCastBar( OwnerID() );
+--			if ( CastBarStatus ~= 0 ) then 
+--				if ( CastBarStatus > 0) then -- 成功
+--					result = "OKOK"
+--					EndCastBar( OwnerID() , CastBarStatus )
+--					break
+--				elseif ( CastBarStatus < 0 ) then -- 失敗
+--					result = "DAME"
+--					EndCastBar( OwnerID() , CastBarStatus )
+--					break
+--				end
+--			end
+--		end
+--		if ( result == "OKOK" ) then
+--			GiveBodyItem ( OwnerID() , 203512 , 1 );
+--			SetPlot(TargetID() , "touch" , "" , 0 )
+--			DelObj(TargetID())
+--		elseif ( result == "DAME" ) then
+--			WriteRoleValue( TargetID() , EM_RoleValue_PID, 0 )
+--		end
+--	end
+--end

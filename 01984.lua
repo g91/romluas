@@ -1,0 +1,35 @@
+
+--刪除 不給糖就搗蛋給過糖的key
+function lua_mika_Helloween_delkey01()
+	Setflag(OwnerID(), 542128 , 0 )
+	Setflag(OwnerID(), 542129 , 0 )
+	Setflag(OwnerID(), 542130 , 0 )
+	Setflag(OwnerID(), 542131 , 0 )
+	Setflag(OwnerID(), 542132 , 0 )
+	Setflag(OwnerID(), 542133 , 0 )
+	Setflag(OwnerID(), 542134 , 0 )
+	Setflag(OwnerID(), 542135 , 0 )
+	Setflag(OwnerID(), 542136 , 0 )
+	Setflag(OwnerID(), 542137 , 0 )
+	Setflag(OwnerID(), 542138 , 0 )
+	Setflag(OwnerID(), 542139 , 0 )
+	Setflag(OwnerID(), 542140 , 0 )
+	Setflag(OwnerID(), 542141 , 0 )
+	Setflag(OwnerID(), 542142 , 0 )
+	Setflag(OwnerID(), 542143 , 0 )
+	Setflag(OwnerID(), 542144 , 0 )
+	Setflag(OwnerID(), 542145 , 0 )
+	Setflag(OwnerID(), 542146 , 0 )
+	Setflag(OwnerID(), 542147 , 0 )
+	Say(OwnerID(), "Del key ok !")
+end
+
+--刪除 搗蛋萬聖節給過糖的key
+function lua_mika_Helloween_delkey02()
+	Setflag(OwnerID(), 542148 , 0 )
+	Setflag(OwnerID(), 542149 , 0 )
+	Setflag(OwnerID(), 542150 , 0 )
+	Setflag(OwnerID(), 542151 , 0 )
+	Setflag(OwnerID(), 542152 , 0 )
+	Say(OwnerID(), "Del key ok !")
+end
