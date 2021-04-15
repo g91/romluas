@@ -8,14 +8,14 @@ function LuaQ_425068_Say()
 	end
 end
 
---SC_425068_0:¥[¤J»È³¥«_ÀIªÌ¨ó·|¡H
---SC_425068_1:¤£¬O»È³¥«_ÀIªÌ¤½·|¡A¦Ó¬O<CS>¯Á¹pº¸¹y</CS>¡A¥u­n§A¯à©¾¸Ûªº©^Äm§Aªº¤O¶q¡A§A·Q­nªº¤@¤Á²ÕÂ´³£·|µ¹§A¡I
+--SC_425068_0:ï¿½[ï¿½Jï¿½È³ï¿½ï¿½_ï¿½Iï¿½Ì¨ï¿½|ï¿½H
+--SC_425068_1:ï¿½ï¿½ï¿½Oï¿½È³ï¿½ï¿½_ï¿½Iï¿½Ì¤ï¿½ï¿½|ï¿½Aï¿½Ó¬O<CS>ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½y</CS>ï¿½Aï¿½uï¿½nï¿½Aï¿½à©¾ï¿½Ûªï¿½ï¿½^ï¿½mï¿½Aï¿½ï¿½ï¿½Oï¿½qï¿½Aï¿½Aï¿½Qï¿½nï¿½ï¿½ï¿½@ï¿½ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½Aï¿½I
 
---SC_425068_2:¯Á¹pº¸¹y......¡H
---SC_425068_3:¯Á¹pº¸¹y«H©^ªº¬OµL»P­Û¤ñªº¤O¶q¡A¨Ì¾Ú¥¦ªº«ü¥Ü¤~¯àÅý¥@¬É¨«¦V¥¿­y¡A¦p¦P§A­Ì¤@¼Ë¡A§A­Ì¤]¬O°í«H¤O¶qªº¤£¬O¶Ü¡H
+--SC_425068_2:ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½y......ï¿½H
+--SC_425068_3:ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½yï¿½Hï¿½^ï¿½ï¿½ï¿½Oï¿½Lï¿½Pï¿½Û¤ñªº¤Oï¿½qï¿½Aï¿½Ì¾Ú¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¤~ï¿½ï¿½ï¿½ï¿½ï¿½@ï¿½É¨ï¿½ï¿½Vï¿½ï¿½ï¿½yï¿½Aï¿½pï¿½Pï¿½Aï¿½Ì¤@ï¿½Ë¡Aï¿½Aï¿½Ì¤]ï¿½Oï¿½ï¿½ï¿½Hï¿½Oï¿½qï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½Ü¡H
 
---SC_425068_4:§Ú©Úµ´¡A¦]¬°¶ø©Ò°Ò´Ë¤j«Òªº¤l¥Á¡C
---SC_425068_5:¬O¶Ü¡H¨º¤]¨SÃö«Y¡A¨º¯àÀ°§Ú¥h®ÇÃäªº½c¤l®³ÂIªF¦è¦n¶Ü¡H
+--SC_425068_4:ï¿½Ú©Úµï¿½ï¿½Aï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Ò°Ò´Ë¤jï¿½Òªï¿½ï¿½lï¿½ï¿½ï¿½C
+--SC_425068_5:ï¿½Oï¿½Ü¡Hï¿½ï¿½ï¿½]ï¿½Sï¿½ï¿½ï¿½Yï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¥hï¿½ï¿½ï¿½äªºï¿½cï¿½lï¿½ï¿½ï¿½Iï¿½Fï¿½ï¿½nï¿½Ü¡H
 
 function LuaQ_425068_Said_1()
 	local OID = OwnerID()
@@ -60,14 +60,14 @@ function LuaQ_425071_SAY()
 			end
 		end
 
---	elseif ReadRoleValue(TID,EM_RoleValue_OrgID)==120245 and  CountBodyItem ( OID  , 241079 ) >= 1 and CountBodyItem ( OID  , 530876 ) ~= 1 then  --ª±®a¨­¤W¦³¦ÑÂÂªº¬ö©À¹ô¡@
-	elseif ReadRoleValue(TID,EM_RoleValue_OrgID)==120245 and  CheckCompleteQuest( OID  , 425022 ) == true and CountBodyItem ( OID  , 530876 ) ~= 1 then  --10/26­×§ï¬°ª±®a¥u­n§¹¦¨¥ô°È"·t¤¤¨ó§U"425022
-	--	SetSpeakDetail( OID  , "[SC_120245_Q_1]" ) --À°§U§O¤HÁô¿f¤@¥ó¨Æ±¡¡A¤]³\¥u»Ý­n¦u¤f¦p²~´N¥i¥H¡A¤£¹L¡A­Y¬O·í§O¤H¬dÄ±¨ìµïµ·°¨¸ñ¤§«á...
- 		AddSpeakOption ( OID , OID  ,"[SC_120245_Q_2]" , "Lua_na_120245_YES" , 0) --§i¶D[120245]Ãö©ó¿ò¥¢Á³µ·ªº¨Æ±¡
-		AddSpeakOption( OID , OID  , "[SC_120245_Q_3]" , "Lua_na_120245_NO" , 0 ) --¦A¥J²Ó·Q·Q¡K
+--	elseif ReadRoleValue(TID,EM_RoleValue_OrgID)==120245 and  CountBodyItem ( OID  , 241079 ) >= 1 and CountBodyItem ( OID  , 530876 ) ~= 1 then  --ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½Âªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@
+	elseif ReadRoleValue(TID,EM_RoleValue_OrgID)==120245 and  CheckCompleteQuest( OID  , 425022 ) == true and CountBodyItem ( OID  , 530876 ) ~= 1 then  --10/26ï¿½×§ï¬°ï¿½ï¿½ï¿½aï¿½uï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"ï¿½tï¿½ï¿½ï¿½ï¿½U"425022
+	--	SetSpeakDetail( OID  , "[SC_120245_Q_1]" ) --ï¿½ï¿½ï¿½Uï¿½Oï¿½Hï¿½ï¿½ï¿½fï¿½@ï¿½ï¿½Æ±ï¿½ï¿½Aï¿½]ï¿½\ï¿½uï¿½Ý­nï¿½uï¿½fï¿½pï¿½~ï¿½Nï¿½iï¿½Hï¿½Aï¿½ï¿½ï¿½Lï¿½Aï¿½Yï¿½Oï¿½ï¿½ï¿½Oï¿½Hï¿½dÄ±ï¿½ï¿½ïµ·ï¿½ï¿½ï¿½ñ¤§«ï¿½...
+ 		AddSpeakOption ( OID , OID  ,"[SC_120245_Q_2]" , "Lua_na_120245_YES" , 0) --ï¿½iï¿½D[120245]ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ±ï¿½
+		AddSpeakOption( OID , OID  , "[SC_120245_Q_3]" , "Lua_na_120245_NO" , 0 ) --ï¿½Aï¿½Jï¿½Ó·Qï¿½Qï¿½K
 	end
 
-	if ReadRoleValue(TID,EM_RoleValue_OrgID)==120245 and DrawfRace ==2 and job==10 and CheckFlag(OID,546211)==false and CheckCompleteQuest(OID,425071)==true then
+	if ReadRoleValue(TID,EM_RoleValue_OrgID)==120245 then -- and DrawfRace ==2 and job==10 and CheckFlag(OID,546211)==false and CheckCompleteQuest(OID,425071)==true then
 		AddSpeakOption(OID,OID,"[SC_546211_CHECK]","LuaS_546211_SETKEY",0)
 	end
 	LoadQuestOption(OID)
@@ -131,18 +131,18 @@ end
 
 
 
-function Lua_DwarfOccupationInstructer()--¸G¤H§Þ¯à¾É®v¹ï¸Ü¼@±¡
+function Lua_DwarfOccupationInstructer()--ï¿½Gï¿½Hï¿½Þ¯ï¿½É®vï¿½ï¿½Ü¼@ï¿½ï¿½
 	local Player,Instructer = OwnerID(),TargetID();
 	local PlayerRace = ReadRoleValue(Player,EM_RoleValue_Race);
 	if PlayerRace~=2 then
-		SetSpeakDetail( Player,"[SC_DWARFINSTRUCTER_A]");--¤£±Ð
+		SetSpeakDetail( Player,"[SC_DWARFINSTRUCTER_A]");--ï¿½ï¿½ï¿½ï¿½
 		return;
 	end
 	LoadQuestOption(Player);
 	local OccupationList = {1,[3]=3,[4]=4,[5]=5,[9]=9,[10]=10};
 	SetFlag(Player,540804,1);
 	local InstructerPID = ReadRoleValue(Instructer,EM_RoleValue_PID);
-	--Â¾·~¸ê®Æ¦Cªí--
+	--Â¾ï¿½~ï¿½ï¿½Æ¦Cï¿½ï¿½--
 	local VocArray = {
 							[1]={[1]=EM_RoleValue_VOCLV_Warrior	,[2]="SO_GETWARRIOR_1"},
 							[2]={[1]=EM_RoleValue_VOCLV_Ranger	,[2]="SO_GETRANGER_1"},
@@ -163,17 +163,17 @@ function Lua_DwarfOccupationInstructer()--¸G¤H§Þ¯à¾É®v¹ï¸Ü¼@±¡
 		end
 	end
 	
-	--Â¾·~¤W­­§PÂ_--
-	local CheckVocNumPass = true				--Â¾·~¤W­­§PÂ_
+	--Â¾ï¿½~ï¿½Wï¿½ï¿½ï¿½Pï¿½_--
+	local CheckVocNumPass = true				--Â¾ï¿½~ï¿½Wï¿½ï¿½ï¿½Pï¿½_
 	if	ReadRoleValue( Player , EM_RoleValue_VocCount )<=VocNum	then
 		CheckVocNumPass = false
 	end
-	if	CheckVocNumPass == false	then		--¦pªGÂ¾·~¨ì¤W­­«h°±¤î
+	if	CheckVocNumPass == false	then		--ï¿½pï¿½GÂ¾ï¿½~ï¿½ï¿½Wï¿½ï¿½ï¿½hï¿½ï¿½ï¿½ï¿½
 		return
 	end
 	
-	--¤w¦³Â¾·~§PÂ_--
-	if	ReadRoleValue(Player,VocArray[InstructerPID][1])~=0	then	--¦pªG¤w¸g¦³¦¹Â¾·~«h°±¤î
+	--ï¿½wï¿½ï¿½Â¾ï¿½~ï¿½Pï¿½_--
+	if	ReadRoleValue(Player,VocArray[InstructerPID][1])~=0	then	--ï¿½pï¿½Gï¿½wï¿½gï¿½ï¿½ï¿½ï¿½Â¾ï¿½~ï¿½hï¿½ï¿½ï¿½ï¿½
 		return
 	end
 
@@ -191,13 +191,13 @@ function Lua_DwarfOccupationLearned()
 	local Instructer = TargetID()
 	CloseSpeak(Player);
 	local VocType = ReadRoleValue(Instructer,EM_RoleValue_PID)
-	WriteRoleValue(Player,EM_RoleValue_VOC_SUB,VocType)		--µ¹¤©Â¾·~
-	SetFlag(Player,540820,1)	--°ÆÂ¾·~¸ê®æ
-	if CheckFlag( Player , 540190 ) == false then		--¶Ç°e³N
+	WriteRoleValue(Player,EM_RoleValue_VOC_SUB,VocType)		--ï¿½ï¿½ï¿½ï¿½Â¾ï¿½~
+	SetFlag(Player,540820,1)	--ï¿½ï¿½Â¾ï¿½~ï¿½ï¿½ï¿½
+	if CheckFlag( Player , 540190 ) == false then		--ï¿½Ç°eï¿½N
 		SetFlag(Player,540190,1)
 		ScriptMessage( Player , Player , 1 , "[SC_JOBGIVETRANSPORT][$SETVAR1=[491891]]" , C_SYSTEM )
 	end
-	if CheckFlag( Player , 540191 ) == false then		--¶Ç°e³N
+	if CheckFlag( Player , 540191 ) == false then		--ï¿½Ç°eï¿½N
 		SetFlag(Player,540191,1)
 		ScriptMessage( Player , Player , 1 , "[SC_JOBGIVETRANSPORT][$SETVAR1=[491913]]" , C_SYSTEM )
 	end
