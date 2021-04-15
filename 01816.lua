@@ -1,11 +1,11 @@
---ï¿½Ø«eï¿½oï¿½ï¿½CHECKï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½kï¿½ï¿½ï¿½Æ¦@ï¿½ï¿½--
+--¥Ø«e³o­ÓCHECKªº³¡¤À¸ò¨k°õ¨Æ¦@¥Î--
 
 function FN_HOUSESERVANT_CheckTired(id,need,type)
-	local temp1 = 0
-	local temp2 = ReadServantValue( id, EM_HouseServantValueType_Value0 ) --ï¿½Ë±Kï¿½ï¿½
-	local temp3 = ReadServantValue( id, EM_HouseServantValueType_Value1 ) --ï¿½yï¿½O
-	local temp4 = ReadServantValue( id, EM_HouseServantValueType_MaxValue0 ) --ï¿½Ë±Kï¿½×³Ì¤jï¿½ï¿½
-	local temp5 = ReadServantValue( id, EM_HouseServantValueType_MaxValue1 ) --ï¿½yï¿½Oï¿½Ì¤jï¿½ï¿½
+	local temp1 = ReadServantValue( id, EM_HouseServantValueType_Tired ) --¯h³Ò
+	local temp2 = ReadServantValue( id, EM_HouseServantValueType_Value0 ) --¿Ë±K«×
+	local temp3 = ReadServantValue( id, EM_HouseServantValueType_Value1 ) --¾y¤O
+	local temp4 = ReadServantValue( id, EM_HouseServantValueType_MaxValue0 ) --¿Ë±K«×³Ì¤j­È
+	local temp5 = ReadServantValue( id, EM_HouseServantValueType_MaxValue1 ) --¾y¤O³Ì¤j­È
 --	Say( OwnerID(), "OwnerID")
 --	local script = id
 --	script = script  .. " SAY "
@@ -15,19 +15,19 @@ function FN_HOUSESERVANT_CheckTired(id,need,type)
 --	script = script  .. " SAY "
 --	script = script  .. " " .. temp2
 --	ClientEvent_Range(  OwnerID(), 99, script )
---ï¿½Hï¿½Wï¿½oï¿½qï¿½Oï¿½Î¨ï¿½ï¿½Ë¬dï¿½Ë¬dï¿½kï¿½ï¿½ï¿½Æ­ï¿½ï¿½Ü¤Æªï¿½
+--¥H¤W³o¬q¬O¥Î¨ÓÀË¬dÀË¬d¤k¹²¼Æ­ÈÅÜ¤Æªº
 	if temp1 <= ( 100 - need ) then
 		WriteServantValue( id , EM_HouseServantValueType_Tired, temp1+need )
 		if need ==15 then
 			local String = Rand(11)
 			local String2 = temp2/10
-			if String >= String2 then --ï¿½ï¿½ï¿½Ë±Kï¿½×¶Vï¿½ï¿½ï¿½Aï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
-				if temp4 > temp2 then --ï¿½Pï¿½_ï¿½Ë±Kï¿½×­nï¿½pï¿½ï¿½Ì¤jï¿½È¤~ï¿½|ï¿½ï¿½ï¿½ï¿½
+			if String >= String2 then --·í¿Ë±K«×¶V°ª¡A¶VÃø´£¤É
+				if temp4 > temp2 then --§PÂ_¿Ë±K«×­n¤p©ó³Ì¤j­È¤~·|´£¤É
 					WriteServantValue( id , EM_HouseServantValueType_Value0, temp2+1 )
 --					WriteServantValue( id , EM_HouseServantValueType_Value0, 100 )
 					ScriptMessage( OwnerID(), OwnerID(), 1, "[C_HOUSESERVANT_SYS01]".."1", C_SYSTEM )
 				end
-				if temp5 > temp3 then --ï¿½Pï¿½_ï¿½yï¿½Oï¿½nï¿½pï¿½ï¿½Ì¤jï¿½È¤~ï¿½|ï¿½ï¿½ï¿½ï¿½
+				if temp5 > temp3 then --§PÂ_¾y¤O­n¤p©ó³Ì¤j­È¤~·|´£¤É
 					WriteServantValue( id , EM_HouseServantValueType_Value1, temp3+1 )
 --					WriteServantValue( id , EM_HouseServantValueType_Value1, 100 )
 				end

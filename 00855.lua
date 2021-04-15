@@ -1,7 +1,7 @@
 --陣型產生範例
 function LuaYuyu_NA_matrix()
 
---		<<座標 Matrix 資料代表位置的示意圖>>
+--	<<Schematic diagram of the position represented by the coordinate Matrix data>>
 -- 	[1][-Count/2... -2 , -1 , 0 , 1 , 2 ... Count/2]
 --  	[2][-Count/2... -2 , -1 , 0 , 1 , 2 ... Count/2]
 --  	[3][-Count/2... -2 , -1 , 0 , 1 , 2 ... Count/2]

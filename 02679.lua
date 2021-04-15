@@ -105,6 +105,42 @@ function Cl_Black_Itemshop_Table(StringID,ZoneID) ------------溶解石
 	Shop_Table[34]["Dungeon_Weapon"] = 600576						---副本武器商人
 	Shop_Table[34]["Formula2"] = 600577
 
+	Shop_Table[35] = {} ---ZONE 35
+	Shop_Table[35]["ExchangeStone"] = { 207004 , 14 , 22400 , 180 }		---溶解石商人
+	Shop_Table[35]["medicinal"] = 600572							---材料藥水商人
+	Shop_Table[35]["Weapon"] = 600573							---武器飾品商人                     
+	Shop_Table[35]["EquipAndArmor"] = 600574						---防具商人
+	Shop_Table[35]["Formula"] = 600575							---配方商人                   
+	Shop_Table[35]["Dungeon_Weapon"] = 600576						---副本武器商人
+	Shop_Table[35]["Formula2"] = 600577
+
+	Shop_Table[36] = {} ---ZONE 36
+	Shop_Table[36]["ExchangeStone"] = { 207004 , 14 , 22400 , 180 }		---溶解石商人
+	Shop_Table[36]["medicinal"] = 600572							---材料藥水商人
+	Shop_Table[36]["Weapon"] = 600573							---武器飾品商人                     
+	Shop_Table[36]["EquipAndArmor"] = 600574						---防具商人
+	Shop_Table[36]["Formula"] = 600575							---配方商人                   
+	Shop_Table[36]["Dungeon_Weapon"] = 600576						---副本武器商人
+	Shop_Table[36]["Formula2"] = 600577
+
+	Shop_Table[37] = {} ---ZONE 37
+	Shop_Table[37]["ExchangeStone"] = { 207004 , 14 , 22400 , 180 }		---溶解石商人
+	Shop_Table[37]["medicinal"] = 600572							---材料藥水商人
+	Shop_Table[37]["Weapon"] = 600573							---武器飾品商人                     
+	Shop_Table[37]["EquipAndArmor"] = 600574						---防具商人
+	Shop_Table[37]["Formula"] = 600575							---配方商人                   
+	Shop_Table[37]["Dungeon_Weapon"] = 600576						---副本武器商人
+	Shop_Table[37]["Formula2"] = 600577
+
+	Shop_Table[38] = {} ---ZONE 38
+	Shop_Table[38]["ExchangeStone"] = { 207004 , 14 , 22400 , 180 }		---溶解石商人
+	Shop_Table[38]["medicinal"] = 600572							---材料藥水商人
+	Shop_Table[38]["Weapon"] = 600573							---武器飾品商人                     
+	Shop_Table[38]["EquipAndArmor"] = 600574						---防具商人
+	Shop_Table[38]["Formula"] = 600575							---配方商人                   
+	Shop_Table[38]["Dungeon_Weapon"] = 600576						---副本武器商人
+	Shop_Table[38]["Formula2"] = 600577
+
 	return Shop_Table[ZoneID][StringID]
 end
 --------------------以下為溶解石商人-------------------------------

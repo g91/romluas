@@ -148,3 +148,6 @@ function Lua_cang_Fight_1()
 		end
 	end
 end
+
+
+

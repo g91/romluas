@@ -1,7 +1,7 @@
 function Lua_TransToDungeons_Site( SelectType )
 	local Dungeons = {};
-		Dungeons[1] = {--¨Ì®æ»ú¤j³°ªº§Cµ¥¯Å°Æ¥»
-				[1] = {--¨õ¦H©¥¸]¦a¥Ş
+		Dungeons[1] = {--ä¾æ ¼å„‚å¤§é™¸çš„ä½ç­‰ç´šå‰¯æœ¬
+				[1] = {--å‘åŠ£å²©çªŸåœ°ç©´
 					["Lv"] = 8;
 					["ZoneID"] = 1;
 					["X"] = -4629;
@@ -10,7 +10,7 @@ function Lua_TransToDungeons_Site( SelectType )
 				};
 
 				
-				[2] = {--ÂÄ´µ¬_¯S¦a¤U±K«Ç
+				[2] = {--è–©æ–¯æŸ¯ç‰¹åœ°ä¸‹å¯†å®¤
 					["Lv"] = 13;
 					["ZoneID"] = 10;
 					["X"] = -38084;
@@ -18,7 +18,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -3118;
 				};
 								
-				[3] = {--­·¨®±K«Ç
+				[3] = {--é¢¨è»Šå¯†å®¤
 					["Lv"] = 14;
 					["ZoneID"] = 1;
 					["X"] = -1440;
@@ -26,7 +26,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -5565;
 				};
 				
-				[4] = {--¼o±ó­×¹D°|
+				[4] = {--å»¢æ£„ä¿®é“é™¢
 					["Lv"] = 22;
 					["ZoneID"] = 2;
 					["X"] = -1480;
@@ -34,7 +34,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 2188;
 				};
 				
-				[5] = {--Ãè¤§¹Ó«°
+				[5] = {--é¡ä¹‹å¢“åŸ
 					["Lv"] = 30;
 					["ZoneID"] = 4;
 					["X"] = -4040;
@@ -42,7 +42,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -840;
 				};
 				
-				[6] = {--¦B³·¸G¤H¤ı°ê¿ò¸ñ
+				[6] = {--å†°é›ªçŸ®äººç‹åœ‹éºè·¡
 					["Lv"] = 35;
 					["ZoneID"] = 11;
 					["X"] = -20365;
@@ -50,7 +50,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -21115;
 				};
 				
-				[7] = {--¯¦ªk²½¾Â
+				[7] = {--ç¥•æ³•ç¥­å£‡
 					["Lv"] = 38;
 					["ZoneID"] = 5;
 					["X"] = -14650;
@@ -58,7 +58,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -14990;
 				};
 				
-				[8] = {--¬f´µ¨Ø´µ¸t°ó
+				[8] = {--æŸæ–¯ä½©æ–¯è–å ‚
 					["Lv"] = 45;
 					["ZoneID"] = 10;
 					["X"] = -42530;
@@ -67,8 +67,8 @@ function Lua_TransToDungeons_Site( SelectType )
 				};
 			};
 	
-	Dungeons[2] ={ --¨Ì®æ»ú¤j³°ªº°ªµ¥¯Å°Æ¥»
-				[1] = {--¿W²´±_«°
+	Dungeons[2] ={ --ä¾æ ¼å„‚å¤§é™¸çš„é«˜ç­‰ç´šå‰¯æœ¬
+				[1] = {--ç¨çœ¼å·¢åŸ
 					["Lv"] = 50;
 					["ZoneID"] = 11;
 					["X"] = -38160;
@@ -76,7 +76,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -9345;
 				};
 				
-				[2] = {--³Ø¨½®¦¯«·µ
+				[2] = {--å–€é‡Œæ©ç¥æ®¿
 					["Lv"] = 50;
 					["ZoneID"] = 6;
 					["X"] = -18580;
@@ -84,7 +84,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 12360;
 				};
 				
-				[3] = {--¦B³·¸G¤H¤ı°ê¿ò¸ñ
+				[3] = {--å†°é›ªçŸ®äººç‹åœ‹éºè·¡
 					["Lv"] = 50;
 					["ZoneID"] = 11;
 					["X"] = -20365;
@@ -92,7 +92,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -21115;
 				};
 				
-				[4] = {--ÂÃÄ_±K¸]
+				[4] = {--è—å¯¶å¯†çªŸ
 					["Lv"] = 50;
 					["ZoneID"] = 3;
 					["X"] = 11640;
@@ -100,7 +100,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 2245;
 				};
 				
-				[5] = {--®ü­µ¤§¤ß
+				[5] = {--æµ·éŸ³ä¹‹å¿ƒ
 					["Lv"] = 52;
 					["ZoneID"] = 7;
 					["X"] = 24712;
@@ -108,7 +108,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 19245;
 				};
 				
-				[6] = {--¤Óªì¤§©Ò
+				[6] = {--å¤ªåˆä¹‹æ‰€
 					["Lv"] = 55;
 					["ZoneID"] = 4;
 					["X"] = -11680;
@@ -116,7 +116,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 8640;
 				};
 				
-				[7] = {--¤ôÀs¬}¸]
+				[7] = {--æ°´é¾æ´çªŸ
 					["Lv"] = 55;
 					["ZoneID"] = 1;
 					["X"] = 2390;
@@ -124,7 +124,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -5420;
 				};
 
-				[8] = {--Å]Às¤§±_
+				[8] = {--é­”é¾ä¹‹å·¢
 					["Lv"] = 55;
 					["ZoneID"] = 9;
 					["X"] = -18445;
@@ -132,7 +132,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 27130;
 				};
 
-				[9] = {--¿ò¥Á·µ°ó
+				[9] = {--éºæ°‘æ®¿å ‚
 					["Lv"] = 55;
 					["ZoneID"] = 2;
 					["X"] = 3675;
@@ -140,7 +140,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 11480;
 				};
 				
-				[10] = {--¯Á¹pº¸¹y°Ï
+				[10] = {--ç´¢é›·çˆ¾é “å€
 					["Lv"] = 55;
 					["ZoneID"] = 9;
 					["X"] = -21305;
@@ -148,7 +148,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 40390;
 				};
 
-				[11] = {--®£Äß¤§¤ı®c·µ
+				[11] = {--ææ‡¼ä¹‹ç‹å®®æ®¿
 					["Lv"] = 55;
 					["ZoneID"] = 9;
 					["X"] = -21015;
@@ -159,7 +159,7 @@ function Lua_TransToDungeons_Site( SelectType )
 
 	
 	Dungeons[3] = {
-				[1] = {--¹F©Ô¥§´µ¦a¤UºÊº»¿ò¸ñ
+				[1] = {--é”æ‹‰å°¼æ–¯åœ°ä¸‹ç›£ç„éºè·¡
 					["Lv"] = 57;
 					["ZoneID"] = 15;
 					["X"] = -2900;
@@ -167,7 +167,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 7244;
 				};
 				
-				[2] = {--¥Ë¯Ç¦hªÖÄv§Ş³õ
+				[2] = {--ç“¦ç´å¤šè‚¯ç«¶æŠ€å ´
 					["Lv"] = 58;
 					["ZoneID"] = 16;
 					["X"] = -1455;
@@ -175,7 +175,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 18445;
 				};
 				
-				[3] = {--¨ØÁÂ¯«·µ
+				[3] = {--ä½©è¬ç¥æ®¿
 					["Lv"] = 60;
 					["ZoneID"] = 17;
 					["X"] = -3545;
@@ -183,7 +183,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 32940;
 				};
 				
-				[4] = {--¥d¨U§J¤§¹Ó
+				[4] = {--å¡æ²ƒå…‹ä¹‹å¢“
 					["Lv"] = 62;
 					["ZoneID"] = 18;
 					["X"] = 2924;
@@ -191,7 +191,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 48570;
 				};
 
-				[5] = {--®æ©Ô¤Ò¥j³ù
+				[5] = {--æ ¼æ‹‰å¤«å¤å ¡
 					["Lv"] = 65;
 					["ZoneID"] = 19;
 					["X"] = -8328;
@@ -199,7 +199,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 45353;
 				};
 
-				[6] = {--ÂÄº¸¦h³ù
+				[6] = {--è–©çˆ¾å¤šå ¡
 					["Lv"] = 67;
 					["ZoneID"] = 20;
 					["X"] = -17038;
@@ -207,7 +207,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 33860;
 				};
 
-				[7] = {--¤C­^¶¯¤§¹Ó
+				[7] = {--ä¸ƒè‹±é›„ä¹‹å¢“
 					["Lv"] = 70;
 					["ZoneID"] = 15;
 					["X"] = -3286;
@@ -218,7 +218,7 @@ function Lua_TransToDungeons_Site( SelectType )
 
 
 	Dungeons[4] = {
-				[1] = {--¥Ã«íªk°}
+				[1] = {--æ°¸æ†æ³•é™£
 					["Lv"] = 72;
 					["ZoneID"] = 22;
 					["X"] = -18298;
@@ -226,7 +226,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -17510;
 				};
 
-				[2] = {--®w°Ç©_´İÀe±_¥Ş
+				[2] = {--åº«å‹’å¥‡æ®˜éª¸å·¢ç©´
 					["Lv"] = 75;
 					["ZoneID"] = 23;
 					["X"] = -4064;
@@ -234,7 +234,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -21284;
 				};
 
-				[3] = {--«Ê»k«°
+				[3] = {--å°è•åŸ
 					["Lv"] = 77;
 					["ZoneID"] = 24;
 					["X"] = 6188;
@@ -242,7 +242,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -7490;
 				};
 
-				[4] = {--¥¬¦«°Ò°gÃú¤`«°
+				[4] = {--å¸ƒæ‰˜æ›¼è¿·éœ§äº¡åŸ
 					["Lv"] = 80;
 					["ZoneID"] = 25;
 					["X"] = -3037;
@@ -250,7 +250,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = -2422;
 				};
 
-				[5] = {--¨©©Ô¸¦¨È¤ı«°
+				[5] = {--è²æ‹‰è’‚äºç‹åŸ
 					["Lv"] = 82;
 					["ZoneID"] = 26;
 					["X"] = -18335;
@@ -261,7 +261,7 @@ function Lua_TransToDungeons_Site( SelectType )
 
 
 	Dungeons[5] = {
-				[1] = {--¥¨ÃT¦aµ¢
+				[1] = {--å·¨é¯Šåœ°çª–
 					["Lv"] = 85;
 					["ZoneID"] = 27;
 					["X"] = -7836;
@@ -269,7 +269,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 6366;
 				};
 
-				[2] = {--²öºûªâ¦y¬W
+				[2] = {--è«ç¶­èŠ¬å°–æŸ±
 					["Lv"] = 87;
 					["ZoneID"] = 28;
 					["X"] = 1407;
@@ -277,7 +277,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 21159;
 				};
 
-				[3] = {--Ä_®y¼X³õ
+				[3] = {--å¯¶åº§å¢³å ´
 					["Lv"] = 90;
 					["ZoneID"] = 29;
 					["X"] = 15165;
@@ -285,7 +285,7 @@ function Lua_TransToDungeons_Site( SelectType )
 					["Z"] = 22126;
 				};
 
-				[4] = {--¥d¨F·RÄõ¦aµ¢
+				[4] = {--å¡æ²™æ„›è˜­åœ°çª–
 					["Lv"] = 92;
 					["ZoneID"] = 30;
 					["X"] = 22207;
@@ -294,32 +294,71 @@ function Lua_TransToDungeons_Site( SelectType )
 				};
 			}
 
-	Dungeons[6] = {--§J¾|­}¨È¤j³°¡]32¶}©ñ¡A33­n¤@¦¸¶}¨â­Ó¡^
-				[1] = {--¾uÅ\ÅÉ
-					["Lv"] = 95;
-					["ZoneID"] = 32;
-					["X"] = -9811;
-					["Y"] = 38;
-					["Z"] = -9194;
-				};
+	Dungeons[6] = {--å…‹é­¯è¿ªäºå¤§é™¸ï¼ˆ32é–‹æ”¾ï¼Œ33è¦ä¸€æ¬¡é–‹å…©å€‹ï¼‰
+                [1] = {--éª·é«å·–
+                    ["Lv"] = 95;
+                    ["ZoneID"] = 32;
+                    ["X"] = -9811;
+                    ["Y"] = 38;
+                    ["Z"] = -9194;
+                };
 
-				--[2] = {--¥¨Å]¤§±_°Òº¸¨ô±F
-				--	["Lv"] = 97;
-				--	["ZoneID"] = 33;
-				--	["X"] = -11608;
-				--	["Y"] = 995;
-				--	["Z"] = 4359;
-				--};
+                [2] = {--å·¨é­”ä¹‹å·¢æ›¼çˆ¾å“å¯‡
+                    ["Lv"] = 97;
+                    ["ZoneID"] = 33;
+                    ["X"] = -11608;
+                    ["Y"] = 995;
+                    ["Z"] = 4359;
+                };
 
-				--[3] = {--´ç¾~¤§¤ß
-				--	["Lv"] = 97;
-				--	["ZoneID"] = 33;
-				--	["X"] = -5766;
-				--	["Y"] = 842;
-				--	["Z"] = -3753;
-				--};
+                [3] = {--æ¸¡é´‰ä¹‹å¿ƒ
+                    ["Lv"] = 97;
+                    ["ZoneID"] = 33;
+                    ["X"] = -5766;
+                    ["Y"] = 842;
+                    ["Z"] = -3753;
+                };
 
-			}
+                [4] = {--Vale of Rites
+                    ["Lv"] = 98;
+                    ["ZoneID"] = 34;
+                    ["X"] = -2225;
+                    ["Y"] = 392;
+                    ["Z"] = 2747;
+                };
 
-	return Dungeons[SelectType];
+                [5] = {--Ice Blades
+                    ["Lv"] = 99;
+                    ["ZoneID"] = 35;
+                    ["X"] = -4614;
+                    ["Y"] = 545;
+                    ["Z"] = 4147;
+                };
+
+                [6] = {--Sun Temple
+                    ["Lv"] = 100;
+                    ["ZoneID"] = 36;
+                    ["X"] = -995;
+                    ["Y"] = 263;
+                    ["Z"] = -2723;
+                };
+                
+				[7] = {--Tomb of Souls
+                    ["Lv"] = 100;
+                    ["ZoneID"] = 37;
+                    ["X"] = 1870;
+                    ["Y"] = 274;
+                    ["Z"] = 1885;
+                };
+				
+				    [8] = {--New Pantheon
+                    ["Lv"] = 100;
+                    ["ZoneID"] = 38;
+                    ["X"] = 5457;
+                    ["Y"] = 227;
+                    ["Z"] = 2364;
+                };
+            }
+
+    return Dungeons[SelectType];
 end
